@@ -392,11 +392,12 @@ module_documentation:
     - Usage examples in code
     
   ARCHITECTURE_DOCS:
-    - System design diagrams
-    - Data flow documentation
+    - C4 Model diagrams (Context, Container, Component, Code)
+    - Data flow and sequence diagrams
     - Integration architecture
     - Dependency graphs
-    - Performance characteristics
+    - Architecture Decision Records (ADRs)
+    - Performance and scalability patterns
 ```
 
 #### Documentation Update Process
@@ -428,13 +429,14 @@ When invoked via `/docs {{module_name}}`:
 #### Auto-Generated Documentation
 
 I can automatically generate:
-- API documentation from code annotations
-- Database schema documentation
-- Configuration references
-- Environment variable lists
-- Error code dictionaries
-- Type definitions
-- Dependency trees
+- **C4 Model Diagrams**: Context, Container, Component views using PlantUML/Mermaid
+- **Architecture Decision Records (ADRs)**: Document key decisions with context, decision, consequences
+- **Data Flow Diagrams**: Visual representation of data movement through the module
+- **API Documentation**: From code annotations and OpenAPI/Swagger specs
+- **Database Schemas**: ERD diagrams and migration documentation
+- **Dependency Graphs**: Internal and external dependency visualization
+- **Sequence Diagrams**: Interaction flows for complex operations
+- **Component Diagrams**: Module structure and relationships
 
 #### Documentation Best Practices
 
@@ -466,6 +468,93 @@ documentation_standards:
     - Table of contents
     - Cross-references
     - Glossary of terms
+```
+
+### Architecture Documentation Capabilities
+
+When invoked for architecture documentation, I generate:
+
+```yaml
+architecture_artifacts:
+  c4_model:
+    system_context:
+      - External systems and users
+      - System boundaries
+      - High-level interactions
+    container_diagram:
+      - Services and applications
+      - Databases and storage
+      - Communication protocols
+    component_diagram:
+      - Module internal structure
+      - Key components and interfaces
+      - Design patterns used
+    code_diagram:
+      - Class relationships
+      - Key abstractions
+      - Implementation details
+      
+  architecture_decisions:
+    ADR_template:
+      - Title and status
+      - Context and problem statement
+      - Decision drivers
+      - Considered options
+      - Decision outcome
+      - Consequences (positive/negative)
+      - Links to related ADRs
+      
+  data_architecture:
+    data_models:
+      - Entity relationship diagrams
+      - Data flow diagrams
+      - State transition diagrams
+    storage_strategy:
+      - Database schemas
+      - Caching layers
+      - Data retention policies
+      
+  integration_patterns:
+    - Synchronous vs asynchronous
+    - Event-driven architecture
+    - API gateway patterns
+    - Service mesh considerations
+    
+  quality_attributes:
+    performance:
+      - Latency requirements
+      - Throughput targets
+      - Scalability patterns
+    reliability:
+      - Failure modes
+      - Recovery strategies
+      - Monitoring points
+```
+
+#### Diagram Generation with PlantUML/Mermaid
+
+```plantuml
+@startuml C4_Context
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(user, "User", "Module user")
+System(module, "{{module_name}}", "Module description")
+System_Ext(ext_system, "External System", "Integration point")
+
+Rel(user, module, "Uses")
+Rel(module, ext_system, "Integrates with")
+@enduml
+```
+
+```mermaid
+graph TB
+    A[User Request] --> B{Module Entry}
+    B --> C[Validation]
+    C --> D[Processing]
+    D --> E[Response]
+    D --> F[Side Effects]
+    F --> G[Events]
+    F --> H[Logging]
 ```
 
 ### Security Review Capabilities
