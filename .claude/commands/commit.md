@@ -1,6 +1,6 @@
 ---
 command: commit
-description: 🔄 Professional Git Commit Command
+description: 📝 Create git commits with analysis. Params: --no --push
 ---
 
 Intelligent commit system with integrated linting, multi-agent analysis, and automatic changelog generation.
@@ -10,6 +10,8 @@ Intelligent commit system with integrated linting, multi-agent analysis, and aut
 ```bash
 /commit           # Full process: lint + agents analysis + confirmations
 /commit --no      # Fast mode: solo specialist-git, sin lint ni agentes dinámicos
+/commit --push    # Commit normal + push automático al remoto
+/commit --no --push # Fast mode + push
 ```
 
 ## Execution Flow

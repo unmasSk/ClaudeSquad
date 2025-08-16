@@ -1,0 +1,1650 @@
+{
+  "total_agents": 85,
+  "healthy": 24,
+  "degraded": 61,
+  "critical": 0,
+  "average_drift": 15.4,
+  "average_age": 1.7,
+  "upgrade_needed": [],
+  "results": [
+    {
+      "agent": "ClaudeSquad-agents",
+      "health": "degraded",
+      "drift_score": 30.5,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 916,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_todos",
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "ClaudeSquad-agents-specialist",
+      "health": "degraded",
+      "drift_score": 30.5,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 1387,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_todos",
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "ClaudeSquad-commands-specialist",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 1079,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "ClaudeSquad-documentation-specialist",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 647,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "ClaudeSquad-hooks-specialist",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 844,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "ClaudeSquad-knowledge-base",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 855,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "ClaudeSquad-mcp-specialist",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 1945,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "ClaudeSquad-scripts-specialist",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 1120,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "agent-creator",
+      "health": "healthy",
+      "drift_score": 0.0,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 452,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "substantial"
+        ]
+      },
+      "days_old": 0,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "analyst-business",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "analyst-data-scientist",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "analyst-metrics",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "analyst-requirements",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "analyst-risk",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "analyst-tech-stack",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "analyst-user-research",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "architect-cloud",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "architect-system",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 27,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "auditor-accessibility",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "auditor-compliance",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "auditor-cost",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "auditor-gdpr",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "auditor-security",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "context-manager",
+      "health": "healthy",
+      "drift_score": 1.0,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 466,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_code_examples",
+          "substantial"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-backend",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 692,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-data",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 618,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-database",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 725,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-devops",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 596,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-frontend",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 682,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-infrastructure",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 625,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-migration",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 618,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-security",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 618,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "coordinator-testing",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 618,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "documentation-changelog",
+      "health": "healthy",
+      "drift_score": 0.0,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 355,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "substantial"
+        ]
+      },
+      "days_old": 0,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "documentation-clarification",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "documentation-technical",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-ai-integration",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-angular",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-billing",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-cms",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-database",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-email",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-fastapi",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-git",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-graphql",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-laravel",
+      "health": "healthy",
+      "drift_score": 0.0,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 1280,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 0,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-licensing",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-mapbox",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-memory",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-message-queue",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-ml",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-mysql",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-nextjs",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-nodejs",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-notification",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-postgis",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-postgres",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-prompt",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-react",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-redis",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-search",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-sqlite",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-system",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-ui-ux",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-vue",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "engineer-weaviate",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "operations-apm",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "operations-debugging",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "operations-docker",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "operations-incident",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "operations-logging",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "operations-observability",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "operations-performance",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "operations-troubleshooter",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "planning-project",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "planning-roadmap",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "setup-codebase",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 209,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "substantial"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "setup-context",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 147,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "substantial"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "setup-environment",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 204,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "substantial"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "setup-infrastructure",
+      "health": "healthy",
+      "drift_score": 0.5,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 238,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "substantial"
+        ]
+      },
+      "days_old": 1,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "specialist-discovery",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 26,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "specialist-git",
+      "health": "healthy",
+      "drift_score": 0.0,
+      "quick_check": true,
+      "recommendation": "Agent is healthy - no action needed",
+      "analysis": {
+        "exists": true,
+        "lines": 1142,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "has_code_examples",
+          "comprehensive"
+        ]
+      },
+      "days_old": 0,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "testing-automation",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "testing-e2e",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 33,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    },
+    {
+      "agent": "testing-quality",
+      "health": "degraded",
+      "drift_score": 21.0,
+      "quick_check": true,
+      "recommendation": "Monitor closely - consider light refresh",
+      "analysis": {
+        "exists": true,
+        "lines": 27,
+        "has_yaml_header": true,
+        "has_content": true,
+        "quality_indicators": [
+          "has_expertise",
+          "minimal"
+        ]
+      },
+      "days_old": 2,
+      "file_count_delta": 0
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 ---
 command: pr
-description: 🔀 Professional pull request creation with intelligent branch management and automated description generation
+description: 🔀 Create pull request with analysis. Params: none
 ---
 
 # 🔀 Pull Request Creation Command

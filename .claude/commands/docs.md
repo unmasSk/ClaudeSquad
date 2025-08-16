@@ -1,6 +1,6 @@
 ---
 command: docs
-description: 📖 Module Documentation Update Command
+description: 📖 Update module documentation. Params: [module] --check
 ---
 
 # 📖 Module Documentation Update Command

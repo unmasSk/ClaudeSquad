@@ -1,6 +1,6 @@
 ---
 command: issue
-description: 🪲 GitHub Issues Management Command
+description: 🪲 Manage GitHub issues. Params: ["error description"]
 ---
 
 List existing issues or create new ones with intelligent categorization and error analysis.

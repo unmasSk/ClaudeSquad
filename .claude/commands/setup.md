@@ -1,11 +1,18 @@
 ---
 command: setup
-description: 🚀 Setup command for ClaudeSquad
+description: 🚀 Setup project with ClaudeSquad agents. Params: --update
 ---
 
 ## ⚡ MANDATORY COMMAND FLOW
 
 This hybrid version merges the **technical depth and safeguards** of the original specification with the **clarity and structure** of the newer documentation, while retaining all _immutable rules_ and best practices from Claude Code.
+
+## Usage
+
+```
+/setup         # Initial complete setup for new projects
+/setup --update # Update existing setup (new modules, refresh agents)
+```
 
 ---
 

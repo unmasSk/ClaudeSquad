@@ -1,29 +1,46 @@
 ---
 command: save
-description: ♾️ Save current session context to Memory Server for persistence between conversations
+description: 💾 Save session context to memory. Params: --all
 ---
 
 # Save Session Command
 
-This command saves the current session's context, accomplishments, and quality metrics to Memory Server for retrieval in future conversations.
+Saves the current session to both Memory Server (MCP) and SESSIONS/ folder for persistence between conversations.
 
 ## Usage
 
 ```
-/save-session [--notes "additional notes"] [--quality N] [--force]
+/save         # Save to Memory Server + SESSIONS/ folder
+/save --all   # Also creates detailed Trello card in "Memory" list
 ```
 
 ## Options
 
-- `--notes`: Add custom notes about the session
-- `--quality`: Override automatic quality score (0-10)
-- `--force`: Force save even if Memory Server is unavailable
+- **Default**: Saves to both Memory Server and creates markdown file in /SESSIONS/
+- `--all`: Additionally creates a beautiful Trello card with detailed summary
 
 ## Implementation
 
 When invoked, perform the following steps:
 
-### 1. Analyze Current Session
+### 1. Save to Both Locations (Always)
+
+- **Memory Server**: Create/update entity `CLAUDESQUAD-SESSION-{timestamp}`
+- **SESSIONS/ folder**: Create markdown file `{timestamp}.md`
+
+### 2. With --all Flag: Create Trello Card
+
+Create card in "Memory" list (create list if doesn't exist):
+- **Title**: 📝 Session {date} - {main_achievement}
+- **Description**: Beautiful detailed summary with:
+  - 🎯 Objectives completed
+  - 🛠️ Technologies used
+  - 📊 Metrics and stats
+  - 💡 Key decisions made
+  - 🚀 Next steps
+- **Labels**: Based on work type (feature, bugfix, research, etc)
+
+### 3. Analyze Current Session
 
 Review the conversation to identify:
 

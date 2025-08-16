@@ -1,480 +1,234 @@
-# 🚀 ClaudeSquad
+# 🚀 ClaudeSquad - The ONLY Multi-Agent System with Dual Persistent Memory
 
-> Complete multi-agent system for Claude Code with 86+ specialized agents (13 complete, 73+ placeholders), dynamic module agents, **Git workflow automation**, and **cross-domain communication via FLAGS**. Transform Claude into an intelligent project orchestrator that delegates tasks directly to specialized agents with persistent memory and automatic coordination.
+> Transform Claude Code into an intelligent development team with **DUAL MEMORY SYSTEMS** that persist across sessions - a unique feature no other agent system offers. 85+ specialized agents with true knowledge retention.
 
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-blue)](https://www.anthropic.com/claude)
-[![Agents](https://img.shields.io/badge/Agents-86+-green)](./.claude/agents)
-[![Complete](https://img.shields.io/badge/Complete-13-yellow)](./.claude/agents/README.md)
-[![Memory](https://img.shields.io/badge/Memory-Persistent-red)](./.claude/memory)
+[![Memory](https://img.shields.io/badge/Dual%20Memory-Persistent-red)](./.claude/memory)
+[![Agents](https://img.shields.io/badge/Agents-85+-green)](./.claude/agents)
+[![Commands](https://img.shields.io/badge/Commands-9-yellow)](./.claude/commands)
+[![Status](https://img.shields.io/badge/Status-Active%20Development-brightgreen)](https://github.com/unmasSk/ClaudeSquad)
 [![Setup](https://img.shields.io/badge/Setup-Automated-orange)](./.claude/commands/setup.md)
-[![Version](https://img.shields.io/badge/Version-2.1.0-purple)](./CHANGELOG.md)
 
-## 🎯 What is ClaudeSquad?
+## 🧠 What Makes ClaudeSquad UNIQUE?
 
-ClaudeSquad transforms Claude Code from a single AI assistant into a complete development team. Claude becomes the orchestrator, intelligently delegating to 86+ specialized agents (13 complete, 73+ placeholders) AND dynamically creating project-specific module agents, each an expert in their domain.
+### 🔥 THE GAME CHANGER: Dual Persistent Memory System
 
-### 🏗️ System Architecture
+**No other Claude Code agent system has this.** ClaudeSquad implements TWO complementary memory systems that make agents truly intelligent:
 
-```
-Claude (Main Conversation) = DIRECT ORCHESTRATOR
-    │
-    ├── 86+ Global Specialists (~/.claude/agents/)
-    │   ├── ✅ Complete: engineer-laravel, context-manager, agent-creator
-    │   ├── ✅ Complete: specialist-git, documentation-changelog  
-    │   ├── ✅ Complete: coordinators (backend, frontend, database, etc.)
-    │   ├── 📝 Placeholders: 73+ domain specialists (react, vue, postgres, etc.)
-    │   └── 🚀 Git Workflow: /commit, /pr, /issue, /docs commands
-    │
-    └── Dynamic Module Agents (.claude/agents/ - per project)
-        ├── api-agent (knows your API implementation)
-        ├── auth-agent (knows your auth system)
-        └── [created based on your project modules]
-```
+1. **MCP Memory Server** - Global knowledge graph that persists FOREVER across all sessions
+2. **JSON Memory System** - Project-specific knowledge versioned with your code
 
-**Key Innovation:**
+This means:
+- ✅ Agents remember EVERYTHING between conversations
+- ✅ No more repeating context every session
+- ✅ Cumulative learning that improves over time
+- ✅ Project knowledge that travels with your repo
+- ✅ Cross-project intelligence sharing
 
-- **Direct delegation** - No coordinators, Claude delegates directly
-- **Git workflow automation** - Professional `/commit`, `/pr`, `/issue`, `/docs` commands
-- **Dynamic module agents** - Created by agent-creator for your specific project  
-- **Cross-domain FLAGS** - Agents communicate via pending.json for coordination
+**Coming Soon:** RAG (Retrieval-Augmented Generation) integration for unlimited memory scaling.
 
-## ✨ Core Features
+### Additional Power Features
 
-### 🎯 Intelligent `/setup` Command
+- **85+ Specialized Agents** - Domain experts from Laravel to React, PostgreSQL to Kubernetes
+- **Dynamic Module Agents** - Automatically created for YOUR project's specific modules
+- **Professional Commands** - `/commit`, `/pr`, `/issue`, `/docs` for Git workflow automation
+- **FLAGS Coordination** - Automatic cross-domain issue detection and resolution
+- **Voice Notifications** - Spanish TTS with personalized completion messages
 
-One command configures everything:
+## ⚡ Quick Start
 
 ```bash
-claude /setup
-```
-
-**For NEW projects:** Interactive conversation gathering 14 areas of requirements
-**For EXISTING projects:** Automatic detection and configuration
-
-### 🚀 Professional Git Workflow Commands
-
-Complete Git automation with multi-agent analysis:
-
-```bash
-# Intelligent commit with linting and analysis  
-claude /commit
-
-# Automated pull request creation
-claude /pr  
-
-# Structured issue creation with templates
-claude /issue
-
-# Documentation management
-claude /docs
-```
-
-**Features:**
-- Conventional commits with 20+ standardized types
-- Multi-agent code analysis before commits
-- Automated PR creation with GitHub CLI
-- Issue templates with proper categorization
-- Security scanning and linting integration
-
-### 📊 Comprehensive Project Analysis
-
-Four specialized agents analyze your project:
-
-- `setup-context` - Project purpose, architecture, decisions
-- `setup-codebase` - Code structure, modules, patterns, quality
-- `setup-infrastructure` - Deployment, databases, CI/CD, external services
-- `setup-environment` - Tools, versions, system capabilities
-
-### 🔊 TTS Integration & Voice Notifications (NEW!)
-
-**Intelligent Text-to-Speech system** with multi-provider support and Spanish voice configuration:
-
-```bash
-# Configure in .env
-OPENAI_API_KEY=your_key_here
-ENGINEER_NAME=YourName
-```
-
-**Features:**
-- **OpenAI TTS** with Nova voice (high quality, natural Spanish)
-- **Fallback to pyttsx3** with Helena voice (offline Spanish)
-- **Smart notifications** when Claude completes tasks
-- **Personalized messages** with your name (30% of the time)
-- **LLM-generated completion messages** in Spanish
-
-**Based on:** [claude-code-hooks-mastery](https://github.com/disler/claude-code-hooks-mastery) by @disler
-
-### 🧠 Dual Memory Systems
-
-ClaudeSquad uses **TWO different memory systems** for different purposes:
-
-#### 1. **JSON Memory System** (Project-Local)
-
-Located in `.claude/memory/` within each project. Used by dynamic agents for module-specific knowledge:
-
-```
-.claude/memory/
-├── agents/              # Per-agent persistent knowledge
-│   ├── api-agent/
-│   │   ├── knowledge.json    # Module understanding
-│   │   ├── patterns.json     # Detected patterns
-│   │   ├── index.json        # File index and purposes
-│   │   ├── dependencies.json # Dependency mapping
-│   │   ├── history.json      # Creation and changes
-│   │   └── context.json      # Business context and TODOs
-│   └── [agent-name]/
-└── flags/              # Cross-domain communication
-    ├── pending.json    # Active flags needing resolution
-    └── processed.json  # Resolved flags history
-```
-
-**Characteristics:**
-
-- ✅ Git-versioned with your project
-- ✅ Full control over structure
-- ✅ Project-specific data
-- ❌ Doesn't persist between Claude sessions
-- ❌ Not shared between projects
-
-#### 2. **MCP Memory Server** (Global Knowledge Graph)
-
-A persistent knowledge graph that maintains context across ALL Claude sessions and projects:
-
-```javascript
-// Example: Creating project context
-mcp__server -
-  memory__create_entities([
-    {
-      name: "MYPROJECT-INIT-CONTEXT",
-      entityType: "ProjectContext",
-      observations: ["Project setup complete", "Using React + FastAPI"],
-    },
-  ]);
-
-// Example: Searching for context
-mcp__server - memory__search_nodes("MYPROJECT-INIT-CONTEXT");
-```
-
-**Characteristics:**
-
-- ✅ Persists between ALL Claude sessions
-- ✅ Searchable knowledge graph
-- ✅ Project separation (PROJECTNAME-INIT-CONTEXT pattern)
-- ✅ Relationships between concepts
-- ❌ Not Git-versioned
-- ❌ Requires MCP server installation
-
-**How they work together:**
-
-1. **MCP Memory Server** maintains high-level project context and session continuity
-2. **JSON Memory** stores detailed module knowledge for dynamic agents
-3. **FLAGS system** uses JSON for active coordination
-4. **Session saves** update both systems
-
-### 🚩 Cross-Domain FLAGS System
-
-**Automatic coordination** when agents discover issues affecting other modules:
-
-```yaml
-Flow:
-  1. api-agent discovers database performance issue
-  2. Creates flag in pending.json: "DATABASE_INVESTIGATION"
-  3. Notifies Claude: "🚩 FLAG CREATED: DATABASE_INVESTIGATION for database"
-  4. Claude reads pending.json and delegates directly to database-agent
-  5. database-agent resolves issue and moves flag to processed.json
-```
-
-**Benefits:**
-
-- Zero information loss across domains
-- Automatic coordination without manual intervention
-- Complete audit trail of cross-domain discoveries
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Claude Code installed (`npm install -g @anthropic-ai/claude-code`)
-- Git configured
-- Your preferred IDE
-
-### Optional: MCP Servers for Enhanced Features
-
-ClaudeSquad works out-of-the-box, but MCP servers add powerful capabilities.
-
-**Currently Configured Servers:**
-- **Memory** - Persistent session context across conversations
-- **Git** - Advanced Git operations and workflow automation  
-- **Fetch** - Web content fetching and API integration
-- **Time** - Timezone operations and scheduling
-- **Everything** - Comprehensive testing and demonstration server
-- **Context7** - Real-time documentation and library reference
-
-**Optional Installation:**
-```bash
-# Install additional MCP servers as needed
-claude mcp add-npm @modelcontextprotocol/server-memory
-claude mcp add-npm @modelcontextprotocol/server-git
-claude mcp add-npm @modelcontextprotocol/server-fetch
-claude mcp add-npm @modelcontextprotocol/server-time
-claude mcp add-npm @context7/mcp-server
-```
-
-### Installation
-
-```bash
-# 1. Clone the repository
+# 1. Clone repository
 git clone https://github.com/unmasSk/ClaudeSquad.git
 cd ClaudeSquad
 
-# 2. Copy to global Claude directory (Windows)
-New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude" | Out-Null
+# 2. Install globally (Windows)
+New-Item -ItemType Directory -Force -Path "$env:USERPROFILE\.claude"
 Copy-Item ".\.claude\*" "$env:USERPROFILE\.claude\" -Recurse -Force
 
-# 3. Configure TTS (optional but recommended)
-cp .env.sample .env
-# Edit .env and add your OpenAI API key for voice notifications
-
-# 2. Copy to global Claude directory (Mac/Linux)
+# 2. Install globally (Mac/Linux)
 mkdir -p ~/.claude
-cp -r .claude/* ~/.claude/# 3. Navigate to your project
+cp -r .claude/* ~/.claude/
+
+# 3. Navigate to your project
 cd /path/to/your/project
 
 # 4. Run setup
 claude /setup
 ```
 
-## 🎮 Usage Examples
+## 🎮 Professional Commands
 
-### Dynamic Agent Creation + Direct Implementation
+| Command | Description | Usage |
+|---------|-------------|-------|
+| `/setup` | Initialize ClaudeSquad for your project | `claude /setup` |
+| `/commit` | Intelligent commits with multi-agent analysis | `claude /commit --no --push` |
+| `/pr` | Create pull requests with automated descriptions | `claude /pr` |
+| `/issue` | GitHub issue management with templates | `claude /issue "bug description"` |
+| `/docs` | Update module documentation | `claude /docs [module]` |
+| `/save` | Save session context to memory | `claude /save --all` |
+| `/todo` | Manage persistent project todos | `claude /todo "new task"` |
+| `/agent-health` | Check dynamic agent accuracy | `claude /agent-health [module]` |
+| `/tts` | Text-to-speech notifications | `claude /tts "Hello world"` |
 
+[Detailed command documentation](./.claude/commands/README.md)
+
+## 🏗️ System Architecture
+
+```
+Claude (Orchestrator)
+    │
+    ├── Global Specialists (~/.claude/agents/)
+    │   ├── Engineers: Laravel, FastAPI, React, Vue, Node.js
+    │   ├── Database: PostgreSQL, MySQL, Redis, SQLite
+    │   ├── DevOps: Docker, Kubernetes, CI/CD
+    │   ├── Testing: E2E, Performance, Security
+    │   └── Coordinators: Backend, Frontend, Database
+    │
+    └── Dynamic Module Agents (project/.claude/agents/)
+        ├── api-agent (knows YOUR API)
+        ├── auth-agent (knows YOUR auth)
+        └── [auto-created for your modules]
+```
+
+## 🧠 Dual Memory Systems
+
+### 1. JSON Memory (Project-Local)
+- Git-versioned with your project
+- Module-specific knowledge
+- FLAGS for cross-domain coordination
+
+### 2. MCP Memory Server (Global)
+- Persists between ALL Claude sessions
+- Knowledge graph with relationships
+- Project context preservation
+
+## 🚀 Usage Examples
+
+### Intelligent Development
 ```bash
-"Build a user authentication system with 2FA"
+"Build user authentication with OAuth2"
 # Claude automatically:
-# → Uses setup agents to analyze project
-# → Agent-creator creates auth-agent with complete auth module knowledge
-# → Engineer-laravel implements with auth-agent specifications
-# → Security-auditor reviews implementation
+# → Analyzes your project structure
+# → Creates auth-agent with module knowledge
+# → Implements with engineer-laravel
+# → Reviews with security-auditor
 ```
 
-### Direct Agent Invocation
-
+### Git Workflow Automation
 ```bash
-"@frontend-agent, optimize the UserProfile component performance"
-# OR if dynamic agent exists:
-"@userprofile-agent, optimize performance using your module knowledge"
+# Smart commits with analysis
+claude /commit
+
+# Create PR with auto-description
+claude /pr
+
+# Report issues with templates
+claude /issue "Login fails after timeout"
 ```
 
-### Cross-Domain Problem Solving with FLAGS
-
+### Cross-Domain Problem Solving
 ```bash
-"The checkout process is slow"
-# Real system flow:
-# → api-agent investigates, finds N+1 queries
-# → Creates FLAG: "DATABASE_INVESTIGATION for checkout optimization"
-# → Claude delegates to database-agent
-# → Database-agent optimizes queries, documents solution
-# → Solution: 500ms → 15ms (33x improvement)
+"The checkout is slow"
+# → api-agent finds N+1 queries
+# → Creates FLAG for database-agent
+# → database-agent optimizes queries
+# → Result: 500ms → 15ms (33x faster)
 ```
 
-## 📦 Available Agents (86+ Total, 13 Complete)
+## 📦 Available Agents (Sample)
 
-### 🔧 Setup & Creation Agents (5)
+### ✅ Complete (13)
+- `engineer-laravel` - Laravel 11+ with modern patterns
+- `specialist-git` - Git workflow automation
+- `agent-creator` - Dynamic agent generator
+- `context-manager` - Project memory coordination
+- All coordinator agents (backend, frontend, database, etc.)
 
-- ✅ `setup-context` - Analyzes project purpose and architecture
-- ✅ `setup-codebase` - Analyzes code structure and patterns  
-- ✅ `setup-infrastructure` - Analyzes deployment and services
-- ✅ `setup-environment` - Analyzes tools and system capabilities
-- ✅ `agent-creator` - Creates dynamic agents for project modules
+### 🚧 In Development (72+)
+- Backend: FastAPI, Node.js, GraphQL, Django
+- Frontend: React, Vue, Angular, Next.js
+- Database: PostgreSQL, MySQL, MongoDB
+- DevOps: Docker, Kubernetes, Terraform
+- Testing: E2E, Performance, Security
 
-### 🎯 Specialized Engineers (81+)
+[Full agent catalog](./.claude/agents/README.md)
 
-**Completed (8):**
-- ✅ `engineer-laravel` - Laravel 11+ expert with production standards
-- ✅ `context-manager` - Project memory and session coordination
-- ✅ `specialist-git` - Professional Git workflow automation
-- ✅ `documentation-changelog` - Version management and documentation
-- ✅ All coordinator agents (backend, frontend, database, devops, etc.)
+## 📊 What Gets Configured
 
-**Placeholders (73+):**
-- 📝 **Backend:** fastapi, nodejs, graphql, python, java engineers  
-- 📝 **Frontend:** react, vue, angular, nextjs, ui-ux engineers
-- 📝 **Database:** postgres, mysql, redis, sqlite, postgis engineers
-- 📝 **DevOps:** docker, kubernetes, logging, observability engineers
-- 📝 **Security:** security-auditor, compliance, gdpr engineers
-- 📝 **Testing:** test-automation, e2e, performance engineers
-- 📝 **Analysis:** discovery, quality, architecture engineers
+When you run `/setup`:
 
-**+ Dynamic Module Agents:** Created automatically for your specific project modules
+1. **Environment Verification** - Checks tools and dependencies
+2. **Project Analysis** - 4 agents analyze your codebase in parallel
+3. **Language Preferences** - Configure interaction languages
+4. **CLAUDE.md Generation** - Project-specific instructions
+5. **Dynamic Agents** - Creates module-specific agents
+6. **FLAGS System** - Cross-domain communication
+7. **Memory Systems** - Both JSON and MCP configured
 
-[Full agent descriptions in .claude/agents/README.md](./.claude/agents/README.md)
+## 🎯 Benefits Over Standard Claude Code
 
-## 🛠️ Setup Process
+| Feature | Claude Code | ClaudeSquad |
+|---------|------------|-------------|
+| Agents | Single AI | 85+ specialists |
+| Memory | Session only | Persistent dual-system |
+| Git Workflow | Manual | Automated commands |
+| Module Knowledge | Generic | Project-specific agents |
+| Coordination | Manual | Automatic FLAGS |
+| Parallelism | Limited | 10 agents simultaneously |
 
-### Phase 1: Environment Verification
+## 📈 Project Status & Roadmap
 
-- Checks Git, Node, Docker, permissions
-- Identifies missing tools
-- Provides installation commands
-
-### Phase 2: Memory Server Project Context
-
-- Creates PROJECTNAME-INIT-CONTEXT automatically
-- Enables persistence across sessions
-- Prevents cross-project contamination
-
-### Phase 3: Parallel Project Analysis
-
-- Real parallel analysis by 4 setup agents
-- Codebase, infrastructure, context analysis
-
-### Phase 4: Language Configuration
-
-- User interaction language preferences
-- Documentation and code comment languages
-
-### Phase 5: CLAUDE.md Generation
-
-- Custom CLAUDE.md with FLAGS protocol
-- Project-specific agent recommendations
-- Git workflow command integration
-
-### Phase 6: Dynamic Agent Creation
-
-- Agent-creator analyzes modules
-- Creates project-specific agents in parallel
-- Each agent gets complete module knowledge
-
-### Phase 7: FLAGS System Setup
-
-- Creates .claude/memory/flags/ structure
-- Initializes pending.json and processed.json
-
-### Phase 8: System Ready
-
-- All agents available for direct invocation
-- Cross-domain communication configured
-
-## 📋 What Gets Configured
-
-### For New Projects
-
-- 14 comprehensive requirement areas
-- Business domain to deployment strategy
-- Security, compliance, monitoring
-- Team structure and workflows
-
-### For Existing Projects
-
-- Complete stack detection
-- Dependency audit
-- Security vulnerability scan
-- Performance baseline
-- Technical debt assessment
-
-### Generated Files (30+)
-
-- `.env.example`
-- `docker-compose.yml`
-- `.github/workflows/ci.yml`
-- `CONTRIBUTING.md`
-- `SECURITY.md`
-- And 25+ more...
-
-## 🌍 Language Configuration
-
-Claude adapts to your preferences:
-
-- User communication language
-- Documentation language
-- Code comments language
-- Variable naming conventions
-- Commit message language
-- Error message languages
-
-## 📈 System Benefits
-
-- **Direct Delegation:** No coordinator overhead, Claude delegates directly
-- **Module Expertise:** Dynamic agents know YOUR specific code intimately
-- **Cross-Domain Coordination:** FLAGS system prevents information loss
-- **Persistent Memory:** Agents build cumulative knowledge over time
-- **Real Parallelism:** Up to 10 agents work simultaneously
-
-## 📚 Documentation
-
-- [Project Status](./ESTADO-ACTUAL-PROYECTO.md) - Current implementation status
-- [FLAGS System](./.claude/docs/flags-system.md) - Cross-domain communication
-- [JSON Memory System](./.claude/docs/memory-system-real.md) - Local agent memory architecture
-- [MCP Memory Server](./.claude/docs/memory-server-usage-guide.md) - Global persistent knowledge graph
-- [Setup Command](./.claude/commands/setup.md) - Complete setup documentation
-- [All 86+ Agents](./.claude/agents/) - Agent catalog (13 complete, 73+ placeholders)
-- [Context7 Usage](./.claude/docs/context7-usage-guide.md) - Real-time documentation access
-
-## 🚧 Current Status
-
+### Current Status
 ```
-[██████████░░░░░░░░░░░░░░░░░░] 35% Complete
+[████████████░░░░░░░] 40% Complete
 
-✅ Architecture Design: 100%
-✅ File Structure: 100%  
-✅ Setup Command: 100% (8 phases implemented)
-✅ FLAGS System: 100% (fully implemented)
-✅ Git Workflow: 100% (/commit, /pr, /issue, /docs)
-✅ Memory System: 100% (dual JSON + MCP Memory Server)
-✅ Agent Templates: 100% (dynamic agent creation)
-✅ Core Agents: 15% (13 of 86+ agents complete)
-⏳ Agent Development: 15% (73+ placeholders need implementation)
-⏳ Testing: 5% (basic validation only)
-⏳ Advanced Features: 30% (agent-health, prepare-context specs)
+✅ Dual Memory Systems   ✅ FLAGS System
+✅ Setup Command         ✅ Git Commands  
+✅ MCP Integration       ✅ 13 Core Agents
+🚧 72+ Agent Development
+🚧 Testing Framework
 ```
 
-## 🎯 Roadmap
+### 🚀 Actively Under Development
 
-**Completed ✅**
-- [x] Complete agent architecture (86+ agents defined)
-- [x] FLAGS system for cross-domain coordination  
-- [x] Dynamic agent creation with agent-creator
-- [x] Git workflow automation (/commit, /pr, /issue, /docs)
-- [x] Dual memory system (JSON + MCP Memory Server)
+This project is **continuously evolving** with regular updates:
 
-**In Progress 🚧**  
-- [ ] Agent development: 73+ placeholders need full implementation
-- [ ] Testing and validation framework
-- [ ] Advanced command implementations (agent-health, prepare-context)
+- **Weekly**: New agent implementations
+- **Monthly**: Major feature releases
+- **Q1 2025**: RAG integration for unlimited memory
+- **Q2 2025**: VS Code extension
+- **Q3 2025**: Cloud synchronization
 
-**Future 🔮**
-- [ ] Performance metrics dashboard
-- [ ] VS Code extension
-- [ ] AI-powered agent optimization
+Watch/Star this repo to stay updated!
 
 ## 🤝 Contributing
 
-This project has a solid foundation with core features working. Key areas for contribution:
+Key areas for contribution:
+- **Agent Development** - Complete placeholder agents using engineer-laravel as template
+- **Testing** - Comprehensive test coverage
+- **Documentation** - Improve agent documentation
+- **Templates** - Language-specific agent templates
 
-- **Agent Development:** Complete the 73+ placeholder agents using engineer-laravel as the gold standard
-- **Testing Framework:** Comprehensive testing and validation system
-- **Advanced Commands:** Implement agent-health and prepare-context commands
-- **Performance:** Optimization and monitoring improvements
-- **Templates:** Additional language-specific agent templates
+## 📚 Documentation
+
+- [Commands Reference](./.claude/commands/README.md)
+- [Agent Catalog](./.claude/agents/README.md)
+- [FLAGS System](./.claude/docs/flags-system.md)
+- [Memory Systems](./.claude/docs/memory-system-real.md)
+- [Setup Documentation](./.claude/commands/setup.md)
+
+## 🙏 Acknowledgments
+
+- Anthropic team for Claude Code
+- [@disler](https://github.com/disler) for TTS inspiration
+- Community contributors
 
 ## 📜 License
 
 MIT License - Free for commercial and personal use
 
-## 🙏 Acknowledgments
-
-- Anthropic team for Claude Code
-- Community feedback and contributions
-- Inspired by microservices architecture
-
-## 💬 Support & Contact
-
-- GitHub Issues for bugs and features
-- Discussions for questions and ideas
-- Star ⭐ if you find this useful!
-
 ---
 
-**Transform your Claude Code into a complete development team today!** 🚀
+⭐ **Star this repo if you find it useful!**
 
-_Solid foundation ready: 86+ agent architecture, Git workflow automation, FLAGS system, dynamic agent creation, and dual memory system all working. 13 agents complete, 73+ need development._
+**Transform your Claude Code into a complete development team today!** 🚀

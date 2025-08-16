@@ -1,6 +1,6 @@
 ---
 command: todo
-description: 📅 Advanced todo management with persistent markdown file, due dates, and priority sorting
+description: 📅 Manage project TODOs. Params: ["task description"] --list
 ---
 
 # 📝 Advanced Todo Manager for ClaudeSquad
@@ -81,6 +81,7 @@ The command now accepts simple text input that gets automatically formatted:
 ### Auto-Formatting Rules
 
 Claude will analyze simple text input and:
+
 - **Detect priority** from keywords (critical/urgent/bug = high, feature/improvement = medium, docs/cleanup = low)
 - **Parse dates** from natural language ("tomorrow", "next week", "urgent")
 - **Assign unique task ID** by finding next available number
